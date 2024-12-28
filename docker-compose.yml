@@ -1,0 +1,13 @@
+services:
+  ycast:
+    image: satanowski/ycast
+    build:
+      context: .
+    restart: unless-stopped
+    ports:
+      - "8010:8010"
+    environment:
+      STATIONS_PATH: /etc/ycast/stations.yml
+    volumes:
+      - ./examples:/etc/ycast
+

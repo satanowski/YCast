@@ -1,0 +1,12 @@
+__pycache__
+build
+dist
+examples
+Dockerfile
+LICENSE.txt
+MANIFEST.in
+ycast.egg-info
+.dockerignore
+.env
+.git
+.gitignore
